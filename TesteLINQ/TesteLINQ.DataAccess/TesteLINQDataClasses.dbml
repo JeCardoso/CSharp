@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FlowBox_Connect" Class="TesteLINQDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\FlowBox_Connect.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="TesteLINQ.DataAccess.Properties.Settings" SettingsPropertyName="FlowBox_ConnectConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Categorias" Member="Categorias">
+    <Type Name="Categoria">
+      <Column Name="id_categoria" Type="System.Byte" DbType="TinyInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="categoria" Member="categoria1" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Association Name="Categoria_Produto" Member="Produtos" ThisKey="id_categoria" OtherKey="categoria" Type="Produto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Produtos" Member="Produtos">
+    <Type Name="Produto">
+      <Column Name="codigoBarras" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="fabricante" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="categoria" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="valor" Type="System.Decimal" DbType="Decimal(16,2) NOT NULL" CanBeNull="false" />
+      <Column Name="peso" Type="System.Decimal" DbType="Decimal(11,3) NOT NULL" CanBeNull="false" />
+      <Column Name="quantidade" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Categoria_Produto" Member="Categoria1" ThisKey="categoria" OtherKey="id_categoria" Type="Categoria" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

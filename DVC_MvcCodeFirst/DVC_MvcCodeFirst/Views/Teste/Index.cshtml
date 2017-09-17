@@ -1,0 +1,16 @@
+﻿@model IEnumerable<DVC_MvcCodeFirst.Models.Aluno>
+
+@{
+    ViewBag.Title = "Lista de Alunos";
+}
+
+<h2>Alunos</h2>
+<p>Total de Alunos @Model.Count()</p>
+<ul>
+    @foreach(var alunos in Model)
+    {
+        <li>@alunos.IDAluno</li>
+    }
+
+</ul>
+

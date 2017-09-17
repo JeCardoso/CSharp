@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVD_MVC5", "DVD_MVC5\DVD_MVC5.csproj", "{211B3B63-2A09-41C8-9A38-9DC1E463D0BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{211B3B63-2A09-41C8-9A38-9DC1E463D0BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211B3B63-2A09-41C8-9A38-9DC1E463D0BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211B3B63-2A09-41C8-9A38-9DC1E463D0BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211B3B63-2A09-41C8-9A38-9DC1E463D0BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

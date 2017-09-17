@@ -1,0 +1,21 @@
+﻿@model ArquivoViewModel
+@{
+    ViewBag.Title = "Minimalizador";
+}
+
+@using (Html.BeginForm("Executar", "Home"))
+{
+    <div class="row">
+        <div class="col-md-12" style="margin-top: 20px">
+            @Html.LabelFor(m => m.Origem, new { @class = "col-md-2 control-label" })
+            @Html.TextBoxFor(m => m.Origem, new { @class = "form-control" })
+        </div>
+        <div class="col-md-12" style="margin-top: 20px">
+            @Html.LabelFor(m => m.Destino, new { @class = "col-md-2 control-label" })
+            @Html.TextBoxFor(m => m.Destino, new { @class = "form-control" })
+        </div>
+        <div class="col-md-12">
+            <input id="btnExec" type="submit" value="Executar" class="btn btn-default" />
+        </div>
+    </div>
+}

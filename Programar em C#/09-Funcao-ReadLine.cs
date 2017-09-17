@@ -1,0 +1,23 @@
+﻿// Programar em C# #09 - Função ReadLine()
+
+using System;
+
+namespace Base {
+    class FuncaoReadLine {
+        public void Run() {
+            string primeiroNome, ultimoNome;
+            int idade;
+
+            Console.Write("Insere o teu primeiro nome: ");
+            primeiroNome = Console.ReadLine();
+
+            Console.Write("Insere o teu último nome: ");
+            ultimoNome = Console.ReadLine();
+
+            Console.Write("Insere a tua idade: ");
+            idade = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"Nome: {primeiroNome} {ultimoNome}\nIdade: {idade}");
+        }
+    }
+}
